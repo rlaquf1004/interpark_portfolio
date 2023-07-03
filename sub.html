@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인터파크</title>
+    <!--타이틀 아이콘-->
+    <link rel="shortcut icon" href="https://bimage.interpark.com/interpark.ico">
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub.css" rel="stylesheet">
+
+    <!--제이쿼리 스크립트-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
+
+    <!--폰트어썸 스크립트-->
+    <script src="https://kit.fontawesome.com/e4d2c04c78.js" crossorigin="anonymous"></script>
+
+    <!--헤더 스크립트-->
+    <script src="js/header_top_banner.js"></script>
+    <script src="js/header_top_bar.js"></script>
+    <script src="js/all_category_menu.js"></script>
+
+    <!--서브 스크립트-->
+    <script src="js/sub_category.js"></script>
+    <script src="js/sub_product.js"></script>
+    <script src="js/sub_book_introduction.js"></script>
+    <script src="js/sub_recommend.js"></script>
+    <script src="js/sub_live_book.js"></script>
+    <script src="js/sub_menuScroll.js"></script>
+
+    <!--오픈 api 에이젝스-->
+    <script src="js/ajax/sub_recommend_ajax.js"></script>
+
+</head>
+
+<body>
+    <!--상단 광고-->
+    <div id="top_banner_wrap">
+        <div class="top_banner_left_wrap">
+            <div class="top_banner_left">
+                <img src="img/header_top_banner_img/banner_left.jpg" alt="왼쪽 배너">
+            </div>
+        </div>
+
+        <div class="top_banner_right_wrap">
+            <div class="top_banner_right">
+                <img src="img/header_top_banner_img/banner_right.jpg" alt="오른쪽 배너">
+                <span><img src="img/header_top_banner_img/closeBtn.png" alt="닫기 버튼"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+
+        <div id="header_wrap">
+
+            <!--헤더 위 바-->
+            <div id="top_bar_wrap">
+                <div id="top_bar">
+
+                    <ul class="top_left_home">
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="index.html">투어</a></li>
+                        <li><a href="index.html">티켓</a></li>
+                        <li><a href="index.html">쇼핑</a></li>
+                        <li class="selected"><a href="index.html">도서</a></li>
+                    </ul>
+
+                    <ul class="top_right_login">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">북카트</a></li>
+                        <li class="myPage"><a href="#">마이페이지</a><img
+                                src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_down.png">
+                            <ul class="smallMy">
+                                <li><a href="#">마이도서</a></li>
+                                <li><a href="#">주문배송조회</a></li>
+                                <li><a href="#">I-포인트 적립</a></li>
+                                <li><a href="#">나의할인쿠폰</a></li>
+                                <li><a href="#">회원수정</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#">북피니언</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">모바일APP</a></li>
+                        <li class="Language"><a href="#">Language</a><img
+                                src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_down.png">
+                            <ul class="smallLang">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">日本語</a></li>
+                                <li><a href="#">中文</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <!--인터파크 로고 등-->
+            <div id="interpark_wrap">
+                <div id="interpark">
+                    <h1><a href="index.html"><img src="img/header_img/logo_IntcBook.png"></a></h1>
+                    <div class="search_box">
+                        <div class="search_bar">
+                            <input type="search" class="input_search_bar" placeholder="블랙 쇼맨 히가시노 게이고 신간!">
+                            <a href="#" id="click_search"></a>
+                        </div>
+
+                        <div class="hit_search">
+                            <ul>
+                                <li><a href="index.html">자폐인 과학자</a></li>
+                                <li>|</li>
+                                <li><a href="#">육아의 기술</a></li>
+                                <li>|</li>
+                                <li><a href="#">히가시노게이고</a></li>
+                                <li>|</li>
+                                <li><a href="#">전설그림책</a></li>
+                                <li>|</li>
+                                <li><a href="#">사랑의 기술</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mini_bookbanner">
+                        <a href="#">
+                            <img src="img/header_img/mini_bookbanner.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--전체 카테고리 등-->
+            <div id="all_menu_wrap">
+                <div id="all_menu">
+
+
+                    <ul class="all_category">
+                        <li><a href="#"><i class="fa-solid fa-bars"></i> 전체 카테고리 <i
+                                    class="fa-solid fa-chevron-down"></i></a></li>
+
+                        <div id="all_category_menu">
+                            <div class="Cmenu_wrap">
+                                <div class="cate_box1">
+                                    <h3>국내소설</h3>
+                                    <div class="CateIn_box">
+                                        <ul>
+                                            <li><a href="#">소설</a></li>
+                                            <li><a href="#">장르소설</a></li>
+                                            <li><a href="#">시·에세이</a></li>
+                                            <li><a href="#">경제경영</a></li>
+                                            <li><a href="#">자기계발</a></li>
+                                            <li><a href="#">사회과학</a></li>
+                                            <li><a href="#">역사·문화</a></li>
+                                            <li><a href="#">예술·대중문화</a></li>
+                                            <li><a href="#">인문</a></li>
+                                            <li><a href="#">자연과학</a></li>
+                                            <li><a href="#">종교·역학</a></li>
+                                            <li><a href="#">유아</a></li>
+                                            <li><a href="#">아동</a></li>
+                                            <li><a href="#">가정과생활</a></li>
+                                            <li><a href="#">청소년</a></li>
+                                            <li><a href="#">초등학습</a></li>
+                                            <li><a href="#">중등학습</a></li>
+                                            <li><a href="#">고등학습</a></li>
+                                            <li><a href="#">국어·외국어사전</a></li>
+                                        </ul>
+
+                                        <ul>
+                                            <li><a href="#">자격서수험서</a></li>
+                                            <li><a href="#">공무원수험서</a></li>
+                                            <li><a href="#">컴퓨터·인터넷</a></li>
+                                            <li><a href="#">전공대학교제</a></li>
+                                            <li><a href="#">여행</a></li>
+                                            <li><a href="#">취미레저</a></li>
+                                            <li><a href="#">건강뷰티</a></li>
+                                            <li><a href="#">잡지</a></li>
+                                            <li><a href="#">만화라이트노벨</a></li>
+                                            <li><a href="#">유아동전집</a></li>
+                                            <li><a href="#" id="point">예약판매</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="cate_box2">
+                                    <h3>외국도서</h3>
+                                    <div class="CateIn_box">
+                                        <ul>
+                                            <li><a href="#">어린이</a></li>
+                                            <li><a href="#">문학</a></li>
+                                            <li><a href="#">ELT사전</a></li>
+                                            <li><a href="#">컴퓨터</a></li>
+                                            <li><a href="#">경제·인문</a></li>
+                                            <li><a href="#">실용·예술</a></li>
+                                            <li><a href="#">대학·전문서적</a></li>
+                                            <li><a href="#">해외잡지</a></li>
+                                            <li><a href="#">학습교구/게임</a></li>
+                                            <li><a href="#">프랑스도서</a></li>
+                                            <li><a href="#" id="point">예약판매</a></li>
+                                            <li><a href="#" id="point">원서vs번역서</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="cate_box3">
+                                    <h3><a href="#">굿즈# <i class="fa-solid fa-caret-right"></i></a></h3>
+                                    <div class="CateIn_box">
+                                        <ul>
+                                            <li><a href="#">문구/팬시</a></li>
+                                            <li><a href="#">사무/학용</a></li>
+                                            <li><a href="#">학습</a></li>
+                                            <li><a href="#">독서용품</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Cmenu_under_wrap">
+                                <img src="img/header_img/icon_closeX.png" alt="창닫기" class="closeX">
+                            </div>
+
+
+                        </div>
+                    </ul>
+
+
+
+                    <ul class="category2">
+                        <li><a href="#">베스트셀러</a></li>
+                        <li><a href="#">신간</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
+    <!--서브 페이지-->
+    <section>
+
+
+        <div id="section_wrap">
+
+            <!--네비 카테고리-->
+            <div class="sub_nav">
+                <ul>
+                    <li>
+                        <a href="#">홈 <i class="fa-solid fa-caret-down"></i></a>
+                    </li>
+
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+
+                    <li>
+                        <a href="#">국내도서 <i class="fa-solid fa-caret-down"></i></a>
+
+                        <div class="under_box">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <p class="underline">국내도서</p>
+                            <p>외국도서</p>
+                        </div>
+                    </li>
+
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+
+                    <li><a href="#">소설 <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="under_box2">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <div>
+                                <div id="left_box">
+                                    <div class="cateBoxLeft">
+                                        <p class="underline">소설</p>
+                                        <p>시·에세이</p>
+                                        <p>경제경영</p>
+                                        <p>자기계발</p>
+                                    </div>
+
+                                    <div class="cateBoxLeft">
+                                        <p>사회과학</p>
+                                        <p>역사·문화</p>
+                                        <p>예술·대중문화</p>
+                                        <p>인문</p>
+                                        <p>자연·과학</p>
+                                        <p>종교·역학</p>
+                                    </div>
+
+                                    <div class="cateBoxLeft">
+                                        <p>유아</p>
+                                        <p>아동</p>
+                                        <p>기정과생활</p>
+                                        <p>청소년</p>
+                                    </div>
+                                </div>
+
+                                <div id="right_box">
+                                    <div class="cateBoxRight">
+                                        <p>초등학습</p>
+                                        <p>중등학습</p>
+                                        <p>고등학습</p>
+                                        <p>전공·대학교재</p>
+                                        <p>국어·외국어·사전</p>
+                                        <p>자격서·수험서</p>
+                                        <p>컴퓨터·인터넷</p>
+                                    </div>
+
+                                    <div class="cateBoxRight">
+                                        <p>여행</p>
+                                        <p>취미·레저</p>
+                                        <p>건강·뷰티</p>
+                                        <p>잡지</p>
+                                    </div>
+
+                                    <div class="cateBoxRight">
+                                        <p>만화</p>
+                                        <p>유아동전집</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+
+                    <li><a href="#">한국소설 <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="under_box">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <p class="underline">한국소설</p>
+                            <p>주제가 있는 문학</p>
+                            <p>장르소설</p>
+                            <p>외국소설</p>
+                        </div>
+                    </li>
+
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+
+                    <li><a href="#">현대소설 <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="under_box">
+                            <i class="fa-solid fa-angle-up"></i>
+                            <p>고전</p>
+                            <p>근대소설</p>
+                            <p class="underline">현대소설</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--책 제목-->
+            <div class="sub_title">
+                <div class="title_left">
+                    <h3>물 만난 물고기</h3>
+                    <span>: 이찬혁 소설[양장]</span>
+                </div>
+
+                <div class="title_right">
+                    <span>★★★★★</span>
+                    <span>10</span>
+                    <span>|</span>
+                    <span><img src="img/sub_img/title/icon_review.png" alt="리뷰 아이콘"></span>
+                    <span>리뷰</span>
+                </div>
+            </div>
+
+            <!--책 구매창-->
+            <div class="sub_product">
+                <div class="product_left_box">
+
+                    <div class="product_imgbox">
+                        <img src="img/sub_img/book_product/book_img.png" alt="책 표지">
+                    </div>
+
+                    <div class="product_btnbox">
+                        <ul>
+                            <li><a href="#"><img src="img/sub_img/book_product/product_btn1.png" alt="크게보기"></a></li>
+                            <li><a href="#"><img src="img/sub_img/book_product/product_btn2.png" alt="미리보기"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="product_snsbox">
+                        <ul>
+                            <li>판매지수 <span>3,209</span> </li>
+                            <li>공유하기
+                                <img src="img/sub_img/book_product/icon_share1.png" alt="아이콘1">
+                                <img src="img/sub_img/book_product/icon_share2.png" alt="아이콘2">
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="product_right_box">
+                    <div class="product_info">
+                        <ul>
+                            <li>저 : <span>이찬혁</span></li>
+                            <li>|</li>
+                            <li>출판사: <span>수카</span></li>
+                            <li>|</li>
+                            <li>발행 : 2019년 09월 26일</li>
+                            <li>|</li>
+                            <li>쪽수 : 200</li>
+                            <li>|</li>
+                            <li>ISBN : 9791130625904</li>
+                        </ul>
+                    </div>
+
+                    <div class="product_table">
+                        <table>
+                            <tr>
+                                <th>정가</th>
+                                <td>15,000원</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                    <div class="point_box">
+                                        <h4>새책</h4>
+                                        <h3>13,500원<span> (10%할인)</span></h3>
+                                        <p>750P<span> (5%적립)</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>할인혜택</th>
+                                <td class="td_sale">
+                                    카드/간편결제확인 <i class="fa-solid fa-angle-right"></i> | 무이자 할부 <i
+                                        class="fa-solid fa-angle-right"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>적립혜택</th>
+                                <td>
+                                    <span class="td_span1">750P</span> (5%적립)| <span class="td_span2">5만원이상 주문시 2천P+등급별
+                                        최대 1.5%적립</span> <i class="fa-solid fa-angle-right"></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th></th>
+                                <td>
+                                    I-Point 적립은 마이페이지에서 직접 <span class="td_span3">구매확정</span>하신 경우만 적립됩니다.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>추가혜택</th>
+                                <td><img src="img/sub_img/book_product/coupon1.jpg" alt="할인쿠폰1"><img
+                                        src="img/sub_img/book_product/coupon2.jpg" alt="할인쿠폰2"><img
+                                        src="img/sub_img/book_product/coupon3.png" alt="할인쿠폰3"></td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2" style="height:40px;"><img
+                                        src="img/sub_img/book_product/table_banner.jpg" alt="배너"></th>
+                            </tr>
+
+                            <tr>
+                                <th>배송정보</th>
+                                <td>
+                                    <span class="td_span4">
+                                        5/25(목) 이내 발송 예정 (서울시 강남구 삼성로 512) <img
+                                            src="img/sub_img/book_product/ico_help1.gif" alt="help"></span>
+                                    <span class="td_span5">
+                                        |무료배송 <img src="img/sub_img/book_product/ico_help1.gif" alt="help">
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>주문수량</th>
+                                <td>
+                                    <div class="order_btn">
+                                        <div class="minus">-</div>
+                                        <div class="ch_num">1</div>
+                                        <div class="plus">+</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="product_btn_box">
+                            <button>북카트 담기</button>
+                            <button>바로구매</button>
+                            <button>
+                                <div id="heart1"><i class="fa-regular fa-heart"></i></div>
+                                <div id="heart2"><i class="fa-solid fa-heart"></i></div>
+                                <p id="p">3,264</p>
+                                <p id="m">3,265</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!--책 세부정보 전체-->
+            <div class="sub_content">
+
+                <!--서브 메뉴 네비-->
+                <div id="sub_menu_nav">
+                    <ul class="sub_menu_list">
+                        <!--책정보 클래스 2개-->
+                        <li onclick="menuScroll('#live_book_wrap')" class="on1">책정보</li>
+                        <li onclick="menuScroll('#event_wrap')">이벤트/기획전</li>
+                        <li onclick="menuScroll('#recommend_wrap')">추천도서</li>
+                        <li onclick="menuScroll('#review_wrap')">100자평/리뷰</li>
+                        <li onclick="menuScroll('#exchange')">교환/환불/배송</li>
+                    </ul>
+                </div>
+
+
+                <!--책 정보-->
+                <div id="sub_info_wrap">
+
+                    <h2>이상품의 분류</h2>
+                    <div class="product_classification">
+                        <ul>
+                            <li><i class="fa-solid fa-stop"></i></li>
+                            <li><a href="#">Home</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">도서</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">소설</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">한국소설</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">현대소설</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div id="live_book_wrap">
+                        <h2>라이브북</h2>
+                        <div class="liveBook_box">
+
+                            <div class="live_book">
+
+                                <div class="live_main">
+                                    <span class="Li_prev">&lt;</span>
+
+                                    <div class="live_overF">
+                                        <ul>
+                                            <li><img src="img/sub_img/book_content/live_book1.jpg" alt="이미지1"></li>
+                                            <li><img src="img/sub_img/book_content/live_book2.jpg" alt="이미지2"></li>
+                                            <li><img src="img/sub_img/book_content/live_book3.jpg" alt="이미지3"></li>
+                                            <li><img src="img/sub_img/book_content/live_book4.jpg" alt="이미지4"></li>
+                                            <li><img src="img/sub_img/book_content/live_book5.jpg" alt="이미지5"></li>
+                                            <li><img src="img/sub_img/book_content/live_book6.jpg" alt="이미지6"></li>
+                                            <li><img src="img/sub_img/book_content/live_book7.jpg" alt="이미지7"></li>
+                                            <li><img src="img/sub_img/book_content/live_book8.jpg" alt="이미지8"></li>
+                                            <li><img src="img/sub_img/book_content/live_book9.jpg" alt="이미지9"></li>
+                                            <li><img src="img/sub_img/book_content/live_book10.jpg" alt="이미지10"></li>
+                                        </ul>
+                                    </div>
+
+                                    <span class="Li_next">&gt;</span>
+                                </div>
+
+                                <div class="live_right">
+                                    <ul class="book_choice">
+                                        <li><img src="img/sub_img/book_content/live_book1.jpg" alt="이미지1"></li>
+                                        <li><img src="img/sub_img/book_content/live_book2.jpg" alt="이미지2"></li>
+                                        <li><img src="img/sub_img/book_content/live_book3.jpg" alt="이미지3"></li>
+                                        <li><img src="img/sub_img/book_content/live_book4.jpg" alt="이미지4"></li>
+                                        <li><img src="img/sub_img/book_content/live_book5.jpg" alt="이미지5"></li>
+                                        <li><img src="img/sub_img/book_content/live_book6.jpg" alt="이미지6"></li>
+                                        <li><img src="img/sub_img/book_content/live_book7.jpg" alt="이미지7"></li>
+                                        <li><img src="img/sub_img/book_content/live_book8.jpg" alt="이미지8"></li>
+                                        <li><img src="img/sub_img/book_content/live_book9.jpg" alt="이미지9"></li>
+                                        <li><img src="img/sub_img/book_content/live_book10.jpg" alt="이미지10"></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <h2>책소개</h2>
+                    <div class="book_introduction">
+                        <p>철학적인 화두가 고스란히 배어있는 이찬혁의 문장들!</p>
+                        <br>
+
+                        <p>천재적 감성의 아티스트, AKMU(악동뮤지션)의 이찬혁이 펴낸 첫 번째 소설 『물 만난 물고기』. 2019년 가을, 한날 발매된 AKMU(악동뮤지션) 정규앨범
+                            《항해》와 세계관을 공유한 이 작품에는 세상을 향해 던지는 짙고 푸른 물음과 소중한 것을 지켜나가는 것의 의미, 빛나는 삶의 순간들에 대한 저자만의 시선이 담겨있다.
+                            상상을 뒤집는 강렬한 스토리, 탄탄한 구성력을 동원해 인간의 욕망과 두려움, 자유와 통제의 대비, 사랑의 환희와 상실의 상흔, 삶의 의미를 때로는 담담하게, 때로는
+                            환상적으로 보여준다.</p>
+                        <br>
+
+                        <p>앨범 발매를 앞두고 녹음 작업을 하던 선은 자신이 추구하는 예술가로서의 삶이 지금 이곳에 없다는 생각에 이르자, 작업을 중단하고 1년간 여행을 떠나기로 결심한다.
+                            진정한 예술가로서의 삶을 찾아 떠난 여행이었다. 여행을 시작한 이후 수많은 예술가를 만났지만, 그가 기대하는 모습은 전혀 찾</p>
+
+                        <div id="end_intro">
+                            <p>을수 없었다. 그들은 오만과 망상으로 가득했고, 하나같이 이상한 세계에 도취되어 있었다.
+                                <br><br>
+
+                                여전히 갈증이 해소되지 않은 상태에서 선은 여행의 마지막 여정을 맞이하고, 깊은 밤 파도가 부서지는 갑판 한가운데에서 우연히 단발머리를 한 여자의 목숨을
+                                구하게 된다. 삶을 뒤흔들 만남. 남은 여정을 그녀와 함께하며 그토록 찾아 헤매던 삶의 답을 하나하나 풀어나가던 선은, 한편 그녀에 대한 깊은 의문과 함께
+                                불안에 점점 휩싸이게 되는데…….
+                                <br><br>
+
+                                평소 가진 생각을 음악뿐 아니라 다른 방법으로도 표현하고 싶었던 저자는 이번 소설에 삶에 대한 가치관과 예술에 대한 관점을 은유적으로 녹여냈다. 성급하고
+                                단편적인 해석보다는 독자 스스로가 자유롭게 소설의 의미를 발견해주었으면 한다는 저자의 바람처럼, 마음껏 소설 속을 유영하며 깊이 호흡하고, 한편 각자의 삶을
+                                묻고 답하기를 권한다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="unfold_wrap">
+                        <p class="unfold">펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                        <p class="fold">접어보기 <i class="fa-solid fa-angle-up"></i></p>
+                    </div>
+
+
+                    <h2>출판사 서평</h2>
+                    <div class="publisher">
+                        <p class="txt_bold">“천재적 감성의 아티스트, 악동뮤지션 이찬혁 소설 데뷔작!”</p>
+                        <p class="txt_bold">2019년 악동뮤지션 정규앨범 「항해」의 모티브가 된 소설</p>
+                        <br><br>
+                        <p>“만약 음악이 없으면 어떨 것 같아?”</p>
+                        <br>
+                        <p>“그럼 난 터벅터벅 걸었을걸?</p>
+                        <p>난 음악을 들을 땐 조금 다르게 걷거든.</p>
+                        <p>‘타닷타닷’이라든가 ‘퐁퐁퐁’ 걷는 거지.”</p>
+
+                        <div id="end_publisher">
+                            <br><br>
+                            <p>“우리가 노래하듯이,</p>
+                            <p>우리가 말하듯이,</p>
+                            <p>우리가 헤엄치듯이 살길.”</p>
+                            <br><br>
+                            <p>이찬혁의 첫 번째 소설이 출간되었다. “평소 가진 생각을 음악뿐 아니라 다른 방법으로도 표현하고 싶었다”라고 밝힌 그는, 삶의 가치관과 예술에 대한 관점을 소설
+                                『물 만난 물고기』를 통해 은유적으로 녹여냈다. 2019년 가을, 한날 발매된 악동뮤지션 정규앨범 『항해』와 세계관을 공유한 작품으로, 세상을 향해 던지는
+                                짙고 푸른 물음과 소중한 것을 지켜나가는 것의 의미, 빛나는 삶의 순간에 대한 그만의 자유롭고 진중한 시선이 담겼다.
+                                <br>
+                                2012년 악동뮤지션으로 데뷔한 이래 꾸준한 음악 활동을 펼치며 대중에게 수많은 사랑을 받아온 저자는, 앞으로도 음악 또는 철학적인 고민을 이어가며 자신의
+                                예술관과 사랑의 의미, 삶의 소중한 순간들을 되짚어보고자 한다.
+                            </p>
+                            <br>
+                            <br>
+
+                            <p>“난 내가 무엇인지 알고 싶었다.”</p>
+                            <p>초월적 상상, 그 안에서 마음껏 자유하기를</p>
+                            <br>
+
+                            <p>앨범 발매를 앞두고 녹음 작업을 하던 선은 자신이 추구하는 예술가로서의 삶이 지금 이곳에 없다는 생각에 이르자, 작업을 중단하고 1년간 여행을 떠나기로
+                                결심한다. 진정한 예술가로서의 삶을 찾아 떠난 여행이었다.<br>
+                                여행을 시작한 이후 수많은 예술가를 만났지만, 그가 기대하는 모습은 전혀 찾을 수 없었다. 그들은 오만과 망상으로 가득했고, 하나같이 이상한 세계에 도취되어
+                                있었다. 여전히 갈증이 해소되지 않은 상태에서 선은 여행의 마지막 여정을 맞이하고, 깊은 밤 파도가 부서지는 갑판 한가운데에서 우연히 단발 머리를 한 여자의
+                                목숨을 구하게 된다.<br>
+                                삶을 뒤흔들 만남. 남은 여정을 그녀와 함께하며 그토록 찾아 헤매던 삶의 답을 하나하나 풀어나가던 선은, 한편 그녀에 대한 깊은 의문과 함께 불안에 점점
+                                휩싸이게 된다.</p>
+
+                            <br>
+                            <p>『물 만난 물고기』는 상상을 뒤집는 강렬한 스토리, 탄탄한 구성력을 동원해 인간의 욕망과 두려움, 자유와 통제의 대비, 사랑의 환희와 상실의 상흔, 삶의 의미를
+                                때로는 담담하게, 때로는 환상적으로 보여준다. 성급하고 단편적인 해석보다는 독자 스스로가 자유롭게 소설의 의미를 발견해주었으면 한다는 저자의 바람처럼, 마음껏
+                                소설 속을 유영하며 깊이 호흡하고, 한편 각자의 삶을 묻고 답하기를 권한다.</p>
+                            <br>
+                            <p>선율이 흐르는 듯</p>
+                            <p>감성이 섬세하게 배어든 이찬혁의 문장들</p>
+                            <br>
+                            <p>이찬혁이라는 이름 앞에는 늘 ‘천재적’이라는 수식어가 붙는다. 일상을 이야기하지만 한 번도 본 적 없는 어딘가 독특한 가사, 사람과 사물을 보는 남다른 시선,
+                                끝을 알 수 없는 감성의 깊이에 많은 이가 매료되었고, 그의 새로운 창작에 대한 대중의 기대감은 늘 따라붙는다.<br>
+                                문장 하나 하나에 섬세하게 박힌 감성, 마음을 위로하고 정화하는 맑은 감각, 생각에 빠져들게 하는 철학적인 화두가 소설에도 고스란히 배어 있다. 그동안 짧은
+                                가사만으로 그의 세계를 온전히 만끽하기에 아쉬웠던 독자라면, 소설에서 펼쳐지는 충분히 너른 그의 세계를 마음껏 향유하길 바란다.</p>
+                        </div>
+                    </div>
+
+                    <div class="unfold_wrap">
+                        <p class="unfold2">펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                        <p class="fold2">접어보기 <i class="fa-solid fa-angle-up"></i></p>
+                    </div>
+
+
+                    <h2>목차</h2>
+                    <div class="index">
+                        <p>항해</p>
+                        <p>Freedom</p>
+                        <p>달</p>
+                        <p>항해</p>
+                        <p>뱃노래</p>
+                        <p>예술가</p>
+                        <p>보배</p>
+                        <p>항해</p>
+                        <p>Freedom 2</p>
+
+                        <div id="end_index">
+                            <p>정원</p>
+                            <p>물 만난 물고기</p>
+                            <p>고래</p>
+                            <p>작별 인사</p>
+                            <p>항해</p>
+                        </div>
+                    </div>
+
+                    <div class="unfold_wrap">
+                        <p class="unfold3">펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                        <p class="fold3">접어보기 <i class="fa-solid fa-angle-up"></i></p>
+                    </div>
+
+
+
+
+                    <h2>본문중에서</h2>
+                    <div class="main_text">
+                        <p>“선아, 거창한 걸 생각하지 마. 뱉은 말을 지킬 수 없을 것 같으면 그냥 할 수 있는 만큼의 말을 하면 돼. 난 어렸을 때부터 술을 먹지 않을 거라고 말했어. 그리고
+                            지금까지 한 번도 마시지 않았어. 왜냐하면 난 내가 안 마실 수 있다는 걸 알았으니까. 그리고 지금 난 토마토를 먹을 거야.”<br>
+                            그녀는 입을 크게 벌린 채로 말을 했다.<br>
+                            “이건 말한 거고.”<br>
+                            그리고 방울토마토 두 개를 입 안에 넣고 씹더니 보란 듯이 과장된 동작으로 삼켰다.<br>
+                            “이건 지킨 거야.” _본문 93쪽
+                        </p>
+
+                        <br>
+                        <p>“음악이 없으면 서랍 같은 걸 엄청 많이 사야 될 거야. 원래는 음악 속에 추억을 넣고 다니니까. 오늘 우리가 이곳에 온 추억도 새로 산 서랍 속에 넣고는 겉에 ‘작은
+                            별’이라고 쓴 테이프를 붙여놓아야 할걸. 아마 번거롭겠지. 근데 그럴 필요까진 없어. 우리에겐 바다가 있으니까. 바다는 아주 큰 서랍이야. 우린 먼 훗날</p>
+
+                        <div id="end_main_text">
+                            <p>바다 앞 모래사장에 걸터앉아서 오늘을 떠올릴 수도 있어.” _본문 52쪽</p>
+                            <br>
+                            <p>이 순간이 우리의 마지막이라면. 이 갈대밭이 우리의 마지막 자유라면. 더는 시간을 지체할 수 없었다. 나는 벌떡 일어섰다. 그리고 웃옷과 바지를 벗어 던졌다.
+                                해야는 이상한 나의 행동을 보며 깔깔대며 웃었다. 나는 벌거벗은 채로 정갈한 갈대밭에 미친 사람처럼 도약했다. 지금부터 그려질 갈색 도화지 위의 작품은 오직
+                                해야를 위한 것이었다. _본문 43쪽</p>
+                            <br>
+
+                            <p>말도 안 된다는 말이 생긴 이유는 그것을 눈으로 확인하지 못했기 때문이다.</p>
+                            <p>나는 두 눈으로 모든 것을 똑똑히 보았다. _본문 152쪽</p>
+                            <br>
+
+                            <p>“난 이 동네 사람들이 매일 걸어다니는 길을 청소해요. 그들은 자신이 아침에 길바닥에 껌 포장지를 버렸다는 사실을 저녁이 되어 집에 돌아오는 길에는 까먹고
+                                말아요. 왜냐하면 내가 이미 치웠으니까요. 자신이 버린 포장지와 마주칠 일도 없었을 거고 그래서 다시 기억할 일도 없는 거지요. 마찬가지로 그들은 아침에
+                                출근하면서 남편을 향한 분노 따위를 집 앞에 버리고 가요. 어떤 날은 학교에서 들고 온 시기와 질투 같은 것도 있지요. 나는 그들이 그렇게 표출해버리고
+                                아무렇게나 던져놓은 것을 주워 담습니다. 그럼 그들은 그 길을 지나면서 다시 같은 감정을 떠올리지 않게 되지요. 모든 걸 까먹은 채 집으로 들어가서 다시
+                                예전같이 남편을 사랑해주는 거예요.” _본문 113쪽</p>
+                            <br>
+
+                            <p>특별한 자리에 핀 꽃들 대부분은 스스로 괴로워하다가 죽어요. 여기 있던 파란 꽃들은 하얀 꽃을 본 적이 한 번도 없었어요. 다르다는 이유만으로 주위의 꽃들이
+                                하얀 꽃을 얼마나 따돌리고 무시했을지 생각해봐요. 특별한 꽃들은 매일 괴로움에 몸부림쳐요. 자신도 자신의 색깔이 틀렸다고 생각하니까요. 특별한 꽃들은 아무리
+                                물을 주어도 그렇게 서서히 고통 속에 말라 죽어요. 나의 역할은 그런 꽃이 아픔을 느끼지 못할 만큼 작을 때, 태어나자마자 잘라주는 거예요.” _본문 149쪽
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="unfold_wrap">
+                        <p class="unfold4">펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                        <p class="fold4">접어보기 <i class="fa-solid fa-angle-up"></i></p>
+                    </div>
+
+
+
+
+                    <h2>저자소개</h2>
+                    <div class="author_wrap">
+
+                        <div class="author_box">
+
+                            <div class="author_name">
+                                <h3>이찬혁[저]</h3>
+                                <span>신작알림 SMS 신청 <i class="fa-solid fa-angle-right"></i></span>
+                            </div>
+
+                            <div class="author_intro">
+                                <div class="author_birth">
+                                    <p>생년월일</p>
+                                    <span>19960912</span>
+                                </div>
+
+                                <div class="Childhood">
+                                    <p>1996년 경기도 의정부에서 태어났다. 2012년, 악동뮤지션으로 데뷔한 이래 꾸준한 음악 활동을 펼치며 대중에게 큰 사랑을 받아 왔으며 작사한
+                                        주요 노래로는 〈오랜 날 오랜 밤〉, 〈어떻게 이별까지 사랑하겠어, 널 사랑하는 거지〉, 〈낙하〉 등이 있다. 평소 가진 생각을 음악뿐만 아니라
+                                        책에도 담아내기 위해 소설 《물 만난 물고기》를 썼고, 이어서 독특하고 신선한 관점으로 바라본 세상을 담아낸 이수현의 솔로곡 〈ALIEN〉을
+                                        그림책으로 출간했다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="author_book_box">
+                            <div class="author_title">
+                                <h3>저자의 다른 책</h3>
+                                <span>전체보기 <i class="fa-solid fa-angle-right"></i></span>
+                            </div>
+
+                            <div class="author_book">
+                                <ul>
+                                    <li>
+                                        <div class="author_book_img_box">
+                                            <img src="img/sub_img/book_content/bookimg.jpg" alt="에일리언">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+
+                                        <div class="author_text_box">
+                                            <p><a href="#">에일리언</a></p>
+                                            <p><del>16,000원</del> <span>14,400</span>원</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="author_book_img_box">
+                                            <img src="img/sub_img/book_content/bookimg2.jpg" alt="물 만난 물고기">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+
+                                        <div class="author_text_box">
+                                            <p><a href="#">물 만난 물고기(큰글자도서)</a></p>
+                                            <p><span>28,000</span>원</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <h2>언론사 추천 및 수상내역</h2>
+                    <div class="awards">
+                        <div class="awards_box">
+                            <div class="awards_imgbox">
+                                <img src="img/sub_img/book_content/awards_img.png" alt="금메달">
+                            </div>
+
+                            <div class="awards_textbox">
+                                <p>중앙일보 추천</p>
+                            </div>
+                        </div>
+
+                        <div class="awards_box">
+                            <div class="awards_imgbox">
+                                <img src="img/sub_img/book_content/awards_img.png" alt="금메달">
+                            </div>
+
+                            <div class="awards_textbox">
+                                <p>동아일보 추천</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <h2>상품정보제공고시</h2>
+                    <div class="Mark">
+                        <table>
+                            <tr>
+                                <th>저자</th>
+                                <td>이찬혁</td>
+                                <th>기획사/제작사</th>
+                                <td>수카</td>
+                            </tr>
+
+                            <tr>
+                                <th>ISBN</th>
+                                <td>9791130625904</td>
+                                <th>쪽수</th>
+                                <td>200쪽</td>
+                            </tr>
+
+                            <tr>
+                                <th>크기</th>
+                                <td>141*202*23</td>
+                                <th>제품구성</th>
+                                <td>공급업체 특성상 정보확인이 어려우니, 정확한 정보를 확인하시려면 1:1문의게시판을 이용 바랍니다.</td>
+                            </tr>
+
+                            <tr>
+                                <th>발행일(출간일)</th>
+                                <td>2019년 09월26일</td>
+                                <th>목차 또는 책소개</th>
+                                <td>상품 상세 정보를 확인하시고, 정보확인이 어려우시면 1:1문의 게시판을 이용 바랍니다.</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+                    <div id="event_wrap">
+                        <h2>이벤트 기획전</h2>
+                        <div class="event">
+                            <img src="img/sub_img/book_content/book_event1.jpg" alt="5월의 도서 혜택">
+                            <img src="img/sub_img/book_content/book_event2.jpg" alt="도서 3만원 이상">
+                        </div>
+                    </div>
+
+
+
+                    <div id="recommend_wrap">
+                        <!--소설 분야-->
+                        <h5>· 소설 분야에서 많은 회원이 구매한 책</h5>
+                        <div class="Fiction_book">
+                            <div class="slideHide1">
+                                <ul>
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <span class="recommend_prev1"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="recommend_next1"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+
+                        <!--이 책 조회 회원-->
+                        <h5>· 이 책을 조회한 회원들이 같이 본 책</h5>
+                        <div class="check_book">
+                            <div class="slideHide2">
+                                <ul>
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <span class="recommend_prev2"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="recommend_next2"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+
+
+
+                        <!--이 책 구매 회원-->
+                        <h5>· 이 책을 구매한 회원들이 구매한 책</h5>
+                        <div class="buy_book">
+                            <div class="slideHide3">
+                                <ul>
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+
+                                    <li>
+                                        <div class="hover_img"><img
+                                                src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F6136185%3Ftimestamp%3D20230309160857">
+                                            <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 북카트 담기</div>
+                                        </div>
+                                        <p>책제목</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <span class="recommend_prev3"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="recommend_next3"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+
+                    </div>
+
+
+                    <div id="review_wrap">
+                        <!--리뷰 제목칸-->
+                        <h2>
+                            리뷰
+                            <span>★★★★☆</span>
+                            <span>9.2</span>
+                            <span>(총 200건)</span>
+                        </h2>
+
+
+                        <div class="review_title">
+                            <p>구매 후 리뷰 작성 시, 북피니언 지수 최대 600점</p>
+                            <button>리뷰쓰기</button>
+                        </div>
+
+                        <!--베스트 리뷰 칸-->
+                        <div class="review">
+                            <div class="best_review_title">
+                                <img src="img/sub_img/book_content/awards_img2.png" alt="금메달">
+                                <p>베스트 리뷰</p>
+                            </div>
+                        </div>
+
+
+                        <!--리뷰 칸 베스트-->
+                        <div class="review_box">
+                            <div class="re_title_box">
+                                <h3>
+                                    <span>★★★★★</span> 물 만난 물고기_ 너는 바다가 되고 나는 배가 되었네
+                                    <span class="Winner">수상작</span>
+                                </h3>
+
+                                <p>xuan*** | 2019/10/22</p>
+                            </div>
+
+                            <div class="re_content_box">
+                                <p>악동뮤지션 이찬혁의 예술관과 특유의 감성을 책으로 만나다! 상상 너머의 세상을 유영하는 자유로운 아티스트의 감각을 오롯이 담은 소설! 어릴 적 내 꿈에
+                                    나온 Dinosaur 우리 집 창문을 부수고 내 가족에게 포효하던 널 다시 만나면 그때...</p>
+                            </div>
+
+                            <div class="re_great_box">
+                                <span>
+                                    <p>댓글(0) | 추천(32)</p>
+                                    <img src="img/sub_img/book_content/review_suggest_btn.png" alt="추천하기">
+                                </span>
+                                <p>펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                            </div>
+                        </div>
+
+
+
+                        <!--최신/추천순-->
+                        <div class="date">
+                            <p>최근순</p>
+                            |
+                            <p>추천순</p>
+                        </div>
+
+
+
+                        <!--리뷰 칸1-->
+                        <div class="review_box">
+                            <div class="re_title_box">
+                                <h3>
+                                    <span>★★★★★</span> 이찬혁 [물 만난 물고기]
+                                </h3>
+
+                                <p>hj*** | 2019/10/21</p>
+                            </div>
+
+                            <div class="re_content_box">
+                                <p>TV에서 악동뮤지션을 처음 봤을 때를 또렷하게 기억한다. ​ ​ K POP STAR라는 오디션 프로그램에 미쓰에이의 breathe라는 곡을 색다르게
+                                    편곡하여 참가하였는데 수현양의 목소리가 워낙 상큼했고, 둘의 연기와 노래 호흡도 찰떡이었고,...</p>
+                            </div>
+
+                            <div class="re_great_box">
+                                <span>
+                                    <p>댓글(0) | 추천(0)</p>
+                                    <img src="img/sub_img/book_content/review_suggest_btn.png" alt="추천하기">
+                                </span>
+                                <p>펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                            </div>
+                        </div>
+
+
+                        <!--리뷰 칸2-->
+                        <div class="review_box">
+                            <div class="re_title_box">
+                                <h3>
+                                    <span>★★★☆☆</span> 악동뮤지션 이찬혁의 항해
+                                </h3>
+
+                                <p>ktan*** | 2019/10/10</p>
+                            </div>
+
+                            <div class="re_content_box">
+                                <p>이 모든 풍경은 광활한 바다를 마주 보고 있는 녹색 창가에서 시작된다. 굴뚝이 초라하게 솟은 작은 벽돌집 2층에 달려 있는 창. 난 그 창과 꼭 붙어
+                                    자리 잡고 있는 침대에 누워 마저 남은 해의 끄트머리를 구경하고 있었다. 굳이 짚어 말하자면 특정한 것을 구경했다...</p>
+                            </div>
+
+                            <div class="re_great_box">
+                                <span>
+                                    <p>댓글(0) | 추천()</p>
+                                    <img src="img/sub_img/book_content/review_suggest_btn.png" alt="추천하기">
+                                </span>
+                                <p>펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                            </div>
+                        </div>
+
+
+
+                        <!--리뷰 칸3-->
+                        <div class="review_box">
+                            <div class="re_title_box">
+                                <h3>
+                                    <span>★★★★☆</span> 물 만난 물고기
+                                </h3>
+
+                                <p>hill*** | 2019/10/22</p>
+                            </div>
+
+                            <div class="re_content_box">
+                                <p>그들의 음악도 좋았지만, 아이를 키우는 부모로서 이들의 평범하지 않았던 성장환경을 보며 유독 관심이 갔던 그룹. 악동 뮤지션. 지금은 AKMU(악뮤)
+                                    라는 이름으로 활동하고 있다. 남매가 모두 성인이 되었기 때문이라고. 다재다능한 악뮤의 이찬혁이 이번에는 소설을...</p>
+                            </div>
+
+                            <div class="re_great_box">
+                                <span>
+                                    <p>댓글(0) | 추천()</p>
+                                    <img src="img/sub_img/book_content/review_suggest_btn.png" alt="추천하기">
+                                </span>
+                                <p>펼쳐보기 <i class="fa-solid fa-angle-down"></i></p>
+                            </div>
+                        </div>
+
+
+                        <!--페이지 버튼-->
+                        <div class="re_pagebtn">
+                            <div class="re_pagebtn_left">
+                                <ul>
+                                    <li><i class="fa-solid fa-angles-left"></i> 맨앞</li>
+                                    <li><i class="fa-solid fa-angle-left"></i> 이전</li>
+                                    <li class="page_selected">1</li>
+                                    <li class="page_num">2</li>
+                                    <li class="page_num">3</li>
+                                    <li class="page_num">4</li>
+                                    <li class="page_num">5</li>
+                                    <li class="page_num">6</li>
+                                    <li class="page_num">7</li>
+                                    <li class="page_num">8</li>
+                                    <li class="page_num">9</li>
+                                    <li class="page_num">10</li>
+                                    <li>맨뒤 <i class="fa-solid fa-angles-right"></i></li>
+                                    <li>다음 <i class="fa-solid fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="re_pagebtn_right">
+                                <p>총 28 페이지</p>
+                            </div>
+                        </div>
+
+
+                        <!--100자평-->
+                        <h2>100자평</h2>
+                        <div class="one_hundred">
+                            <div class="one_hundred_radio">
+                                <ul>
+                                    <li>
+                                        <input type="radio" checked="checked"> <span>기대평</span>
+                                    </li>
+
+                                    <li>
+                                        | <span>평점</span> <span class="star">★★★★★</span>
+                                    </li>
+                                </ul>
+
+                                <div>
+                                    <span>0/100자</span>
+                                    <textarea maxlength="100" title="100자평">이 책의 100자평을 간단히 남겨주세요.</textarea>
+                                    <button>등록하기</button>
+                                </div>
+                            </div>
+
+
+                            <div class="one_hund_evaluation">
+                                <h3>100자평 <span>★★★★★ 9.9</span></h3>
+                                <p>최근순 | 평점 높은순</p>
+                            </div>
+
+
+                            <div class="hund_review_box">
+                                <h3>
+                                    <span>★★★★★</span>
+                                    <p>whistler***</p>
+                                    좋아요. 추천합니다
+                                </h3>
+                                <p>2022/07/08</p>
+                            </div>
+
+                            <div class="hund_review_box">
+                                <h3>
+                                    <span>★★★★★</span>
+                                    <p>qkrdpwl***</p>
+                                    빠른배송감사합니다
+                                </h3>
+                                <p>2022/07/08</p>
+                            </div>
+
+                            <div class="hund_review_box">
+                                <h3>
+                                    <span>★★★★★</span>
+                                    <p>mini0***</p>
+                                    역시 천재뮤지션 악뮤 너무좋아 찬혁이 너무좋아
+                                </h3>
+                                <p>2022/07/08</p>
+                            </div>
+
+
+                            <!--페이지 버튼-->
+                            <div class="re_pagebtn">
+                                <div class="re_pagebtn_left">
+                                    <ul>
+                                        <li><i class="fa-solid fa-angles-left"></i> 맨앞</li>
+                                        <li><i class="fa-solid fa-angle-left"></i> 이전</li>
+                                        <li class="page_selected">1</li>
+                                        <li class="page_num">2</li>
+                                        <li class="page_num">3</li>
+                                        <li class="page_num">4</li>
+                                        <li class="page_num">5</li>
+                                        <li class="page_num">6</li>
+                                        <li class="page_num">7</li>
+                                        <li class="page_num">8</li>
+                                        <li class="page_num">9</li>
+                                        <li class="page_num">10</li>
+                                        <li>맨뒤 <i class="fa-solid fa-angles-right"></i></li>
+                                        <li>다음 <i class="fa-solid fa-angle-right"></i></li>
+                                    </ul>
+                                </div>
+
+                                <div class="re_pagebtn_right">
+                                    <p>총 55 페이지</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div id="exchange">
+                        <h2>판매자정보</h2>
+                        <div class="seller">
+                            <p>인터파크도서에 등록된 오픈마켓 상품은 그 내용과 책임이 모두 판매자에게 있으며, 인터파크도서는 해당 상품과 내용에 대해 책임지지 않습니다.</p>
+                            <table>
+                                <tr>
+                                    <th>상호</th>
+                                    <td>(주)교보문고</td>
+                                </tr>
+
+                                <tr>
+                                    <th>대표자명</th>
+                                    <td>안병현</td>
+                                </tr>
+
+                                <tr>
+                                    <th>사업자등록번호</th>
+                                    <td>102-81-11670</td>
+                                </tr>
+
+                                <tr>
+                                    <th>연락처</th>
+                                    <td>1544-1900</td>
+                                </tr>
+
+                                <tr>
+                                    <th>전자우편주소</th>
+                                    <td>callcenter@kyobobook.co.kr</td>
+                                </tr>
+
+                                <tr>
+                                    <th>통신판매업신고번호</th>
+                                    <td>01-0653</td>
+                                </tr>
+
+                                <tr>
+                                    <th>영업소재지</th>
+                                    <td>서울특별시 종로구 종로 1(종로1가,교보빌딩)</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+
+
+
+                        <h2>교환/환불</h2>
+                        <div class="refund">
+                            <table>
+                                <tr>
+                                    <th>반품/교환 방법</th>
+                                    <td>'마이페이지 > 취소/반품/교환/환불' 에서 신청 또는 1:1 문의 게시판 및 고객센터(1577-2555)에서 신청 가능</td>
+                                </tr>
+
+                                <tr>
+                                    <th>반품/교환가능 기간</th>
+                                    <td>변심 반품의 경우 출고완료 후 6일(영업일 기준) 이내까지만 가능<br>
+                                        단, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</td>
+                                </tr>
+
+                                <tr>
+                                    <th>반품/교환 비용</th>
+                                    <td>변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담<br>
+                                        상품이나 서비스 자체의 하자로 인한 교환/반품은 반송료 판매자 부담</td>
+                                </tr>
+
+                                <tr>
+                                    <th>반품/교환 불가 사유</th>
+                                    <td>·소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우<br>
+                                        (단지 확인을 위한 포장 훼손은 제외)<br>
+                                        ·소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우<br>
+                                        예) 화장품, 식품, 가전제품(악세서리 포함) 등<br>
+                                        ·복제가 가능한 상품 등의 포장을 훼손한 경우<br>
+                                        예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집<br>
+                                        ·시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우<br>
+                                        ·전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</td>
+                                </tr>
+
+                                <tr>
+                                    <th>상품 품절</th>
+                                    <td>공급사(출판사) 재고 사정에 의해 품절/지연될 수 있음</td>
+                                </tr>
+
+                                <tr>
+                                    <th>소비자 피해보상<br>환불지연에 따른 배상</th>
+                                    <td>·상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁해결 기준 (공정거래위원회 고시)에 준하여
+                                        처리됨<br>
+                                        ·대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+
+                        <h2>배송안내</h2>
+                        <div class="shipping">
+                            <ul>
+                                <li>교보문고 상품은 택배로 배송되며, 출고완료 1~2일내 상품을 받아 보실 수 있습니다.</li>
+                                <li>출고가능 시간이 서로 다른 상품을 함께 주문할 경우 출고가능 시간이 가장 긴 상품을 기준으로 배송됩니다.</li>
+                                <li>군부대, 교도소 등 특정기관은 우체국 택배만 배송가능합니다.</li>
+                                <li>배송비는 업체 배송비 정책에 따릅니다.</li>
+                                <ul>
+                                    <li>- 도서 구매 시, 1만 원 이상 무료, 1만원 미만 2천 원</li>
+                                    <li>- 상품별 배송비가 있는 경우, 상품별 배송비 정책 적용</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div id="footer_wrap">
+            <div class="foot_menu">
+                <ul>
+                    <li class="none"><a href="#">개인정보처리방침</a></li>
+                    <li>|</li>
+                    <li><a href="#">청소년보호정책</a> </li>
+                    <li>|</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">광고안내</a></li>
+                    <li>|</li>
+                    <li><a href="#">담당자안내</a></li>
+                    <li>|</li>
+                    <li><a href="#">판매자매니저</a></li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <div class="info_box1">
+                    <dl>
+                        <dt>(주)인터파크커머스</dt>
+                        <dd>주소 | 서울특별시 서초구 강남대로 447(서초동, 남서울빌딩)</dd>
+                        <dd>사업자등록번호 | 422-81-03185</dd>
+                        <dd>대표이사 | 김양선</dd>
+                        <dd>통신판매업신고 | 2023-서울서초-0823</dd>
+                    </dl>
+                </div>
+
+                <div class="info_box2">
+                    <dl>
+                        <dt>고객센터<a href="#"><img src="img/footer_img/btn_qnaClick.gif" alt="문의 전 클릭"></a></dt>
+                        <dd>전화 1577-2555</dd>
+                        <dd>팩스 02-6924-9050</dd>
+                        <dd>이메일 <a href="#">helpshop@interparkshop.com</a></dd>
+                        <dd>개인정보보호책임자 <a href="#">cposhopping@interparkshop.com</a></dd>
+                        <dd>개인정보보유기간 회원탈퇴시까지</dd>
+                    </dl>
+                </div>
+
+                <div class="info_box3">
+                    <dl>
+                        <dt>구매안전 서비스</dt>
+                        <dd>고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를 받을 수 있는 구매안전 서비스를(쇼핑몰보증보험) 이용하실수 있습니다.</dd>
+                        <a href="#"><img src="img/footer_img/btn_Service.gif" alt="서비스 가입시설 확인" class="service"></a>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="txt">
+                <p class="responsibility">주식회사 인터파크커머스는 인터파크 쇼핑, 인터파크 도서의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓
+                    상품에 대해서 주식회사 인터파크커머스는 일체 책임을 지지 않습니다.</p>
+                <p class="Copyright">Copyright © INTERPARK COMMERCE Corporation ALL Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+[{
+    "bookImg":"Special_img1.jpg",
+    "num":"01",
+    "title":"어서 오세요, 휴남동 서점입니다(여름 숲...",
+    "del":"15,000",
+    "price":"13,500원"
+
+},{
+    "bookImg":"Special_img2.jpg",
+    "num":"02",
+    "title":"월급쟁이 부자로 은퇴하라(10만 부 돌파 ...",
+    "del":"19,800",
+    "price":"17,820원"
+    
+
+},{
+    "bookImg":"Special_img3.jpg",
+    "num":"03",
+    "title":"디 에센셜 한강",
+    "del":"17,000",
+    "price":"15,300원"
+
+},{
+    "bookImg":"Special_img4.jpg",
+    "num":"04",
+    "title":"아들아, 돈 공부해야 한다(10만 부 기념 ...",
+    "del":"15,000",
+    "price":"13,500원"
+
+},{
+    "bookImg":"Special_img5.jpg",
+    "num":"05",
+    "title":"어린이라는 세계",
+    "del":"17,000",
+    "price":"15,300원"
+
+}]
